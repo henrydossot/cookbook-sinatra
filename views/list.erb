@@ -1,0 +1,21 @@
+
+<head>
+  <link rel="stylesheet" href="public/application.css">
+</head>
+<body>
+
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <h4>recipe's name : <%= recipe.name %></h4>
+      <p>recipe's description : <%= recipe.description %></p>
+    </li>
+  <% end %>
+</ul>
+
+<ul>
+  <li><a href="/">Home page</a></li>
+  <li><a href="/new_recipe">Create a new recipe</a></li>
+</ul>
+
+</body>
